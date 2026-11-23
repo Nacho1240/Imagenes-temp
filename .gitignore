@@ -1,0 +1,15 @@
+# Python / Jupyter
+__pycache__/
+*.py[oc]
+.venv
+.ipynb_checkpoints/
+
+# Entregables pesados (zip de fotos propias y video de respaldo)
+entrega/
+*.mp4
+*.mov
+*.zip
+
+# Gradio
+.gradio/
+flagged/
