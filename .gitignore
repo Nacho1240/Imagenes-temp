@@ -13,3 +13,5 @@ entrega/
 # Gradio
 .gradio/
 flagged/
+.DS_Store
+__MACOSX/

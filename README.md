@@ -19,7 +19,7 @@ Evaluación: demostración grupal 50 % · **interrogación individual 50 %**. No
 ## Estructura del entregable
 
 ```
-Tarea3_Apellido1_Apellido2_Apellido3.ipynb   # construido sobre Tarea3_base.ipynb, ejecutado con salidas
+Tarea3_Apellido1_Apellido2_Apellido3.ipynb   # Tarea3_base.ipynb con el reparto marcado (renombrar con los apellidos)
 imagenes/
 ├── cambios/        # set común: pares facil, medio, dificil (del profesor, no tocar)
 ├── panorama/       # set común: panorama de 3 fotos (del profesor, no tocar)
@@ -57,6 +57,12 @@ Escriban su nombre en la tabla:
 - Persona 1: *(nombre)*
 - Persona 2: *(nombre)*
 - Persona 3: *(nombre)*
+
+### ⚠️ Avisos sobre el cuaderno base
+
+- **Falta el par `dificil`** del set común: en `imagenes/cambios/` solo vienen `facil` y `medio`, pero `PARES` busca los tres. Pedírselo al profesor; mientras tanto, quitar `"dificil"` de la lista para que las tablas corran.
+- **`panorama` debe agregar la clave `"par"`** a cada fila (por ejemplo `"1a2"` y `"3a2"`): `app_panorama` la lee con `f['par']`, aunque el enunciado no lo menciona.
+- El texto del cuaderno dice `panorama/{1,2,3}.jpg`, pero los archivos y el código usan **`.jpeg`**.
 
 ### Dependencias entre partes
 
@@ -120,7 +126,7 @@ Cada uno explica su parte a los otros dos y se hacen preguntas cruzadas. Temas q
 - Cómo leer cada tabla.
 
 Checklist del día:
-- [ ] Cuaderno corre en Colab de principio a fin (dependencias instaladas).
+- [ ] Cuaderno corre en Colab de principio a fin. La carpeta `imagenes/` debe estar en Colab junto al cuaderno (subirla como zip y descomprimir, o montar Drive): el repo es privado y no se clona sin token.
 - [ ] Enlace de Gradio abre en el teléfono y se puede proyectar.
 - [ ] Tablas listas para mostrar.
 - [ ] Un caso de fracaso preparado.
